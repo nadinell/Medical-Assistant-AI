@@ -2,6 +2,7 @@
 Medical Assistant IA is a bilingual Streamlit web application powered by a Large Language Model (LLM) and real-time web search. It helps users get concise medical-related answers in French or English, depending on the input language.
 
 🩺 Features
+
 🌐 Web Search Tool: Uses SerpAPI to provide real-time and relevant information from the web.
 
 🧠 LLM Agent: Based on mistral via Ollama, enhanced with LangChain for better reasoning and tool integration.
