@@ -24,13 +24,17 @@ Ollama installed and running (with the mistral model)
 SerpAPI key (get one at serpapi.com)
 
 ** Install dependencies:
+
 pip install -r requirements.txt
 
 ** Set your SerpAPI key:
+
 Create a .streamlit/secrets.toml file:
+
 SERPAPI_KEY = "your-serpapi-key-here"
 
 ** Start the app:
+
 python -m streamlit run app.py
 
 🧪 Tech Stack
