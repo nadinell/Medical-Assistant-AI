@@ -1,17 +1,29 @@
-🤖 Medical Assistant IA
-Medical Assistant IA is a bilingual Streamlit web application powered by a Large Language Model (LLM) and real-time web search. It helps users get concise medical-related answers in French or English, depending on the input language.
+Medical Assistant IA is a bilingual Streamlit web application powered by a Large Language Model (LLM), Retrieval-Augmented Generation (RAG), and real-time web search. It helps users get concise and context-aware medical-related answers in French or English, depending on the input language.
 
 🩺 Features
+🌐 Web Search Tool
+Uses SerpAPI to provide real-time and relevant medical information from the web.
 
-🌐 Web Search Tool: Uses SerpAPI to provide real-time and relevant information from the web.
+📄 PDF Upload with RAG
+Upload one or multiple medical PDF documents. The assistant can answer questions based on these documents using retrieval-augmented generation.
 
-🧠 LLM Agent: Based on mistral via Ollama, enhanced with LangChain for better reasoning and tool integration.
+✨ Summarization
+Summarize each uploaded PDF individually. View each summary in a collapsible dropdown and download it with one click.
 
-🗣️ Language Detection: Automatically detects if your question is in French or English and adapts the response accordingly.
+🧠 LLM Agent
+Powered by the mistral model via Ollama, integrated with LangChain for multi-tool reasoning and document processing.
 
-🧾 Conversation History: Maintains a styled history of past interactions with user and assistant chat bubbles.
+🗣️ Language Detection
+Automatically detects French or English questions and answers accordingly.
 
-🎨 Custom UI: Clean, user-friendly interface with custom CSS styling via Streamlit.
+💬 Conversation History
+Styled chat bubbles track your interactions in a visually clean format.
+
+📥 Streaming Response Output
+The assistant "types" answers word by word, mimicking a real-time typing experience.
+
+🎨 Custom UI
+Modern interface with user-friendly design and CSS-enhanced elements.
 
 🚀 Getting Started
 Prerequisites
@@ -24,17 +36,13 @@ Ollama installed and running (with the mistral model)
 SerpAPI key (get one at serpapi.com)
 
 ** Install dependencies:
-
 pip install -r requirements.txt
 
 ** Set your SerpAPI key:
-
 Create a .streamlit/secrets.toml file:
-
 SERPAPI_KEY = "your-serpapi-key-here"
 
 ** Start the app:
-
 python -m streamlit run app.py
 
 🧪 Tech Stack
